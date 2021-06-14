@@ -1,5 +1,12 @@
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
 function App() {
-  return <h1>Came from Amplify V2</h1>
+  return (
+    <div>
+      <h1>Helloooo Baby!</h1>
+      <AmplifySignOut />
+    </div>
+  )
 }
 
-export default App
+export default withAuthenticator(App) 
